@@ -24,6 +24,22 @@ const practice = () => {
     console.log(index + x);
   });
 
+  // 第５問
+  let a5 = [1,2];
+  console.log(Array.isArray(a5));
+
+  // 第８問
+  const o8 = {
+    key: 'aa',
+    key2: 'bb'
+   }
+
+   console.log(o8.key, o8.key2, Object.keys(o8));
+
+
+
+  
+
   
 }
 
