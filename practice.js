@@ -36,7 +36,24 @@ const practice = () => {
 
    console.log(o8.key, o8.key2, Object.keys(o8));
 
+   // 第９問
+   let a9 = ['a', 'b', 'c'];
+   let word = ''
+   a9.forEach(function(x){
+     word += x;
+   });
+   console.log(word);
 
+   console.log(a9.join('')); // joinメソッドを使った方が簡単に
+
+   // 第１０問
+   x = 43
+  let y = 3
+
+  delete x;
+  // console.log(x); エラー
+  delete y;
+  console.log(y);
 
   
 
