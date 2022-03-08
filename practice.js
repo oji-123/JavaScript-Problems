@@ -122,6 +122,24 @@ const practice = () => {
 
   console.log(fun(1,2,3));
 
+  // 第１５問
+  const a15 = ['a1','a2','a3','a4','a5'];
+  console.log(a15.splice(0, 3,"red", "green", "yellow"));
+  console.log(a15);
+
+  // 第１６問
+  const a16 = ['a1','a2','a3','a4','a5'];
+  console.log(a16.slice(2,5));
+
+  // 第１７問
+  const a17 = ['a1','a2','a3','a4','a5'];
+  console.log(a17.join("/").split("/"));
+  console.log('a/b/c/d/e'.split("/")) // split演算子は()内で指定した文字列で区分し、配列を返す演算子
+
+  // 第１８問
+  const a18 = ['おはよう','こんにちは','おやすみなさい'];
+  const greeting = a18[(Math.floor(Math.random() * a18.length))]; // Math.floorは小数を一番ちかい値よりも大きな数字を返す
+  console.log(greeting);
   
 }
 
