@@ -140,6 +140,23 @@ const practice = () => {
   const a18 = ['おはよう','こんにちは','おやすみなさい'];
   const greeting = a18[(Math.floor(Math.random() * a18.length))]; // Math.floorは小数を一番ちかい値よりも大きな数字を返す
   console.log(greeting);
+
+  // 第１９問
+  // let a19 = Object.create({p: 1}); これでは不可。Object.create()メソッドの第一引数は継承するプロパティを決めるだけなので、
+  // オブジェクトの中の値を決めることはできない。
+  // また、値(value)を決める時は、valueの指定が必要になる。
+  let a19 = Object.create({}, {p: {value: 1}});
+  console.log(a19);
+
+  // 第２０問
+  function Who(name){
+    this.name = name;
+   };
+   Who.prototype.getName = function(){
+    console.log('Myname is ' + this.name);
+   };
+   let o20 = new Who('morita');
+   o20.getName()
   
 }
 
