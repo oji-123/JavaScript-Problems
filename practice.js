@@ -157,6 +157,21 @@ const practice = () => {
    };
    let o20 = new Who('morita');
    o20.getName()
+
+   // 第２１問
+   let a21 = ['e','a','k','B','c'];
+   console.log(a21.sort()); // => [B, a, c, e, k]
+   // 大文字からソートされる。
+
+   // 第２２問
+    let a22 = ['e','a','k','B','c'];
+    a22.sort(function(a,b){
+    return a.toUpperCase() > b.toUpperCase() ? 1 : -1 ;
+    });
+    // toUpperCase()メソッドは大文字で文字列を返す。二つの文字列を大文字で比較し、trueであれば１を、falseであれば−１を返す。
+    //sortメソッドは正の数が返ってきた場合はそのままにし、負の数が返ってきた場合は順番を逆にする。
+    console.log(a22);
+
   
 }
 
