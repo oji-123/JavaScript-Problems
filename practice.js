@@ -172,7 +172,18 @@ const practice = () => {
     //sortメソッドは正の数が返ってきた場合はそのままにし、負の数が返ってきた場合は順番を逆にする。
     console.log(a22);
 
-  
+    // 第２３問
+    let a23 = [20,100,3,35,0];
+    console.log(a23.sort((a, b) => {
+      return b - a; 
+    }));
+
+    // 第２４問
+    let a24 = Number("10");  // 数値型へ変換
+    console.log(typeof a24); // a24の型を調べる
+    console.log(isNaN(a24)); // 
+    console.log(a24.toString()); // 文字列へ変換
+    
 }
 
 window.addEventListener("load", practice);
