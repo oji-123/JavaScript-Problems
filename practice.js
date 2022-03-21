@@ -183,6 +183,30 @@ const practice = () => {
     console.log(typeof a24); // a24の型を調べる
     console.log(isNaN(a24)); // 
     console.log(a24.toString()); // 文字列へ変換
+
+    // 第２５問
+    // カーリー化
+    const f25 = a => (b) => a + b ;
+    const add1 = f25(1);
+    console.log(add1);
+    console.log(add1(2));
+
+    const add2 = f25(1)(2);
+    console.log(add2);
+
+    function add25(x, y){
+      if(typeof y == 'undefined'){
+       return function(y){
+     return x + y
+       }
+      }
+      return x + y
+     }
+     const f251 = add25(1)(2);
+     const f252 = add25(1,2);
+     console.log(f251);
+     console.log(f252);
+
     
 }
 
