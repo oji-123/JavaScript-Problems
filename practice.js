@@ -207,6 +207,18 @@ const practice = () => {
      console.log(f251);
      console.log(f252);
 
+     // 第２６問
+     function Factory(name){
+       return {
+         introduce : function(){ // このように記述することで、introduceメソッドを定義することできる。
+          console.log(name);
+         }
+       };
+     }
+
+     let o26 = Factory('morita');
+     console.log(o26);
+
     
 }
 
