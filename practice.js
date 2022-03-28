@@ -219,6 +219,26 @@ const practice = () => {
      let o26 = Factory('morita');
      console.log(o26);
 
+     // 第２７問
+
+     function sayHi(name){
+      if (name){
+        console.log("Hello!" + name);
+      } else {
+        console.log("Hello");
+      }
+     }
+
+     const f27 = sayHi("oji")
+
+     // 第２８問
+     let o28 = {x : 2, y: 3};
+     Object.preventExtensions(o28); //preventExtensions(object)はプロパティの拡張を抑制する。
+     o28["z"] = 4;
+     console.log(o28);
+     console.log(Object.isExtensible(o28)); // isExtensibleはオブジェクトの拡張が可能かどうか返すメソッド
+     console.log(Object.keys(o28)); // キーは追加されていない
+
     
 }
 
