@@ -239,6 +239,17 @@ const practice = () => {
      console.log(Object.isExtensible(o28)); // isExtensibleはオブジェクトの拡張が可能かどうか返すメソッド
      console.log(Object.keys(o28)); // キーは追加されていない
 
+     // 第２９問
+     let o29 = Object.create(Object.prototype); // let o29 = {}と同値
+     console.log(o29);
+
+     // 第３０問
+     let o30 = Object.create(Object.prototype, {
+      x: {value: 1},
+      y: {value: 2}
+      });
+     console.log(o30); // let o30 = {x: 1, y: 2}と同値に 
+
     
 }
 
