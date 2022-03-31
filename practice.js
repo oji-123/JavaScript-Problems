@@ -254,7 +254,15 @@ const practice = () => {
      const o31 = { x : 2};
      console.log(Object.getOwnPropertyDescriptor(o31, 'x')) // オブジェクトの属性を返すメソッド第一引数を対象オブジェクトに。第二引数をプロパティ値に。
 
-    
+    // 第３２問
+    function f32(){ // 引数を指定していなくても、複数の引数を渡すことはできる。
+      console.log(arguments.length);
+      console.log(arguments[1])
+    }
+
+    f32(5,2,4);
+
+
 }
 
 window.addEventListener("load", practice);
