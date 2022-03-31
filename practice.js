@@ -248,7 +248,11 @@ const practice = () => {
       x: {value: 1},
       y: {value: 2}
       });
-     console.log(o30); // let o30 = {x: 1, y: 2}と同値に 
+     console.log(o30); // let o30 = {x: 1, y: 2}と同値に
+     
+     // 第３１問
+     const o31 = { x : 2};
+     console.log(Object.getOwnPropertyDescriptor(o31, 'x')) // オブジェクトの属性を返すメソッド第一引数を対象オブジェクトに。第二引数をプロパティ値に。
 
     
 }
