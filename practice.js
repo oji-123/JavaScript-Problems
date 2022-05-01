@@ -262,6 +262,17 @@ const practice = () => {
 
     f32(5,2,4);
 
+    // 第３３問
+    let a33 = ['2','23','0','16'];
+    a33.sort(function(a, b){
+      return a - b;
+    });
+    console.log(a33);
+
+    Object.freeze(a33); // freezeはオブジェクトの編集が行うことができなくなるメソッド
+
+    // a33.sort() → sortを行うとエラーが起こる
+    
 
 }
 
